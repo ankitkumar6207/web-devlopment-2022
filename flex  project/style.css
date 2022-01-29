@@ -1,0 +1,117 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;   
+}
+/* header is like conatainer(parent) which has two child div and nav */
+header{
+    height: 100px;
+    /* background: grey; */
+    display:flex;
+    justify-content: space-around;
+
+    /* it gives equal amount of space around the element */
+    align-items: center;
+    /* ye vertically flex items(yha header me logo and ul h) ko centre kr dega */
+    /* and now you can romove background */
+    
+}
+.logo img{
+    width: 150px;
+    
+}
+ul {
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    color:#3a3a3a;
+
+}
+ul li a:hover{
+    color:aqua;
+
+}
+
+/* main is like container and both div are like their child  */
+main{
+    display:flex;
+    /* border:2px solid red; */
+    /* height: 100vh; */
+    /* yha pe 100vh uper ka 100px chod ke le rha h so we have to subtract it its important. */
+    height:calc(100vh - 100px);
+    /* - must be separed by spaces */
+    align-items: center;
+    justify-content: center;
+}
+.bg{
+    width: 800px;
+    height: auto;
+}
+
+.content-left{
+    width:30%;
+}
+
+main h1{
+    font-size:54px;
+    color:#133B4F;
+    text-transform:uppercase;
+}
+
+main h2{
+    font-size:25px;
+    color:#FCA70C;
+    font-weight: 400;
+    /* 400 is for regular weight  */
+    text-transform:uppercase;
+    letter-spacing:8px;
+}
+
+main p{
+    font-size:14px;
+    color:#333;
+    font-weight: 400;
+    line-height: 31.5px;
+    margin:30px 0;
+}
+
+.cta{
+    padding:15px 30px;
+    background-color: #c4c4f7;
+    /* color:#fff; */
+    outline:none;
+    border:none;
+    font-weight: 700;
+    /* bold  */
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+/* and now you can remove the border of main content  */
+
+.signup-btn{
+    /* copy the above stle and paste here only change the padding  */
+    padding:10px 20px;
+    background-color: #c4c4f7;
+    /* color:#fff; */
+    outline:none;
+    border:none;
+    font-weight: 700;
+    /* bold  */
+    text-transform: uppercase;
+    border-radius: 50px;
+
+}
+
+.signup-btn:hover{
+    color:rgb(206, 247, 95);
+}

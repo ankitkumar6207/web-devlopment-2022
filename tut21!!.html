@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- very very very important -->
+    <style>
+        /* universal selector  */
+        *{
+            box-sizing: border-box;
+            padding:0px;
+            margin:auto;
+        }
+        body{
+              background-color: #d6d0dd;
+              
+        }
+      .container{
+          background-color: seashell;
+          
+          border:4px solid black;
+
+
+          /* we can set padding and margin top bottom left and right like this  */
+          /* margin-bottom:30px;
+          margin-top:50px;
+          margin-left:30px;
+          margin-right:40px;
+          padding-top:20px;
+          padding-bottom:20px;
+          padding-left:10px;
+           */
+
+
+           /* shorthand for padding and margin  */
+           /* padding:top right bottom left;     just learn it as trbl  */
+           /* padding:23px 40px 40px 30px;
+           margin:30px 50px 39px 56px; */
+
+            /* padding:y(top/bottom) x(left/right); */
+            /* margin:y(top/bottom) x(left/right); */
+            padding:30px 20px;
+            margin:15px 10px;
+            border-radius: 25px;
+            width:599px;
+            /* box-sizing: border-box; */
+
+
+          /* padding:5px;
+          margin:40px; */
+
+
+
+
+      }
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nulla tenetur quaerat ex necessitatibus sit, accusamus temporibus reiciendis fugiat laborum tempore ab quos! Numquam maxime pariatur, recusandae alias ea ipsum?
+        </p>
+       
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nulla tenetur quaerat ex necessitatibus sit, accusamus temporibus reiciendis fugiat laborum tempore ab quos! Numquam maxime pariatur, recusandae alias ea ipsum?
+        </p>
+       
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nulla tenetur quaerat ex necessitatibus sit, accusamus temporibus reiciendis fugiat laborum tempore ab quos! Numquam maxime pariatur, recusandae alias ea ipsum?
+        </p>
+       
+    </div>
+</body>
+</html>

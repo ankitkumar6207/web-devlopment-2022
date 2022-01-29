@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+  </head>
+  <style>
+      html{
+          font-size:25px;
+      }
+      .container{
+          border:2px solid red;
+          font-size: 10px;
+          height:100vh;
+          /* vh means veiwport height aur iska matlab container ka height pura veiw port heiht ho jayega  */
+          width:100vw;
+          /* vw viewport width  */
+
+          /* vw and vh is like %  */
+
+      }
+      h1{
+          text-align: center;
+      }
+      #first{
+          /* font-size:2em; */
+          /* em postfix lagane se iska size iske parent element ka multiple times ho jata h  */
+          /* yha 3 times bada ho jayega container ke size ka  */
+          padding:3em;
+          /* yha padding 3*10=30 nhi hoga blki iske uper vala part ko multiply karega jaise yha padding ke pehle fontsize 3*10=30 h uska multiple lega 30*3=90px ka padding hoga  */
+          /* ye use hota h jha corresponding element me hota jaise parent element resize hota h to uska child element bhi  resize hoga  */
+
+
+          /* rem is more preferable than em so use rem, rem html ko root manta h aur root ka multiple bhi hota h */
+      }
+          #second{
+              font-size: 3rem;
+              /* font size 75px hoga bcoz html ka size 25 h  */
+              /* padding:3rem; */
+              /* padding bhi 25px hi hoga kyunki rem h  */
+          }
+        
+  </style>
+
+  <body>
+      <div class="container">
+          <h1 id=first>This is first para.</h1>
+          <h1 id=second>This is secon para.</h1>
+          <h1 id=third>This is third para.</h1>
+      </div>
+      
+  </body>
+</html>

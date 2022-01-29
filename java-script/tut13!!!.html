@@ -1,0 +1,59 @@
+<!-- JavaScript SetTimeOut and ClearTimeout  
+most useful function in web dev-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript SetTimeOut and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+    console.log("This is tutorial 58");
+    // setTimeout --> Alllows us to run the function once after the interval of time
+    // setInterval --> Alllows us to run the function repeatedly after the interval of time
+
+    // function greet(){
+    //     console.log("Hello Good Morning ");
+    // }
+    
+    
+    // setTimeout(() => {       this is syntax
+        
+        // }, timeout);
+        
+        // here time is in milli seconds 1 sec=1000milli sec 5000=5sec 
+        // setTimeout(greet,6000);//(VERY IMPORTANT)pehla arg function without parenthesis and dusra time
+    //ye greet function ko 6 sec ke baad call karega and print kr dega
+
+    function greet(name,byetext){
+        console.log("Hello Good Morning "+name + " " + byetext);//double quotes for space.
+    }
+
+    // you can also pass the argument in console like this:
+    // greet("ankit");
+
+   // timeOut = setTimeout(greet, 5000, "Harry", "Take Care");//you can pass multiple argument. 
+    // here time is in milli seconds 1 sec=1000milli sec 5000=5sec 
+    // setTimeout(greet(), 12000); --> (IMPORTANT))Wrong as it is calling the function inside setTimeout
+    
+    // console.log(timeOut);it will print a unique id because setTimeout gives an unique id which can be used in clearTimeout() function like below.
+   // clearTimeout(timeOut);  it cleares the timeout function with the id and it is important use it always with settimeout
+
+   //setInterval(greet, 1000, "Harry", "Good Night");//it prints the output againg and again after 1sec.
+    // intervalId = setInterval(greet, 1000, "Harry", "Good Night");
+    // clearInterval(intervalId);
+
+    function displayTime(){//this function will print date and time
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,  1000);//it runs displayTime function in each 1sec.
+    </script>
+</body>
+</html>

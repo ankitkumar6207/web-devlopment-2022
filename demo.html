@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="payment-form.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p>Required fileds followed by *</p>
+        <p>Name: *
+            <input type="text" name="name" id="name" required placeholder="Ankit kumar">
+        </p>
+        <p>
+        <fieldset>
+            <legend>Gender *</legend>
+ 
+          
+            Male <input type="radio" name="gender" id="Male"   required>
+            Female <input type="radio" name="gender"  id="gender"  required>
+        </p>
+    </fieldset>
+      
+        <!-- <p>Gender:*
+            <select name="Gender" id="Gender" required>
+                <option value="">---select Gender--</option>
+               <option value="Male" >Male</option>
+               <option value="Female" >Female</option>
+               <option value="TRansgender" >Transgender</option>
+            </select> -->
+
+        </p>
+        <p>Admission Date: *
+            <input type="date" name="Admissin " id="Admission" >
+        </p>
+  
+    <p>Address: <textarea name="address" id="address" cols="50" rows="5" placeholder="Enter Your Address"></textarea></p>
+     <p>E-mail: *<input type="email" name="email" id="email" required placeholder="ankitsoni@gmail.com"></p>
+      <p>pin code:*<input type="number" name="pincode" id="pincode" required placeholder="654893"></p>
+      <h2>Payment Information</h2>
+      <p>Card Type: *
+          <select name="card_type" id="card_type" required>
+              <option value="">---Select a Card Type---</option>
+              <option value="visa">visa</option>
+              <option value="mastercard">mastercard</option>
+              <option value="RuPay">RuPay</option>
+              <option value="SBI" > SBI</option>
+
+          </select>
+
+      </p>
+      <p>
+          Card Number: *<input type="number" name="card_number" id="card_number" required placeholder="1111-2222-3333-4444"> 
+              </p>
+              <p>
+                  Expiry Date: *<input type="date" name="exp_date" id="exp_date" required>
+              </p>
+              <p>
+                CVV: *<input type="password" name="cvv" id="cvv" required placeholder="123">
+              </p>
+              <input type="submit" value="Pay Now">
+    </form>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- string tutorial (IMPORTANT) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | String and String methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis possimus ipsum dolorem molestias delectus ad alias, nisi consequuntur dolor ullam, id fugit dignissimos! Eligendi repudiandae rerum ipsa quaerat impedit optio eius nemo laboriosam sunt.</p>
+    </div>
+    <script>
+        // var string="this";
+        var string='thi"s';// if you want to print "" quates then use single qutes otherwise double quotes.
+        console.log(string);
+
+        var name="ankit";
+        var channel="codewithharry";
+        var message=" is a good boy";
+        console.log(name + message);//concatination
+
+        // template literals 
+        //`` these are called backtics
+        var temp=`"${name} is a nice person' "and "he 'has a channel called ${channel}`;
+        // jha jha $ h wo as a fill in the blanks bn jata h and inside `` we can use single or double quaotes.
+        console.log(temp);
+
+
+        // length of a string 
+        var length=name.length;
+        // console.log(length);
+        console.log("the length of name is ${length}");
+
+        // escape sequence
+        console.log("Hello,\n my name is ankit\t and i am \\n a student")
+        var y=new String("ankit");//string by constructor (not recommended)
+        console.log(y);
+
+
+
+
+    </script>
+</body>
+</html>

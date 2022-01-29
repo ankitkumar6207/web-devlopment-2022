@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <!-- very very important -->
+</head>
+<style>
+    /* css position :static(default),relative,absolute,fixed,sticky */
+    .container{
+        border:2px solid black;
+        background-color:cornsilk;
+        height:3000px
+    }
+    .box{
+        display:inline-block;
+        margin:4px;
+        border:4px solid red;
+        width:150px;
+        height:150px;
+
+    }
+    /* #box3{
+        relative:relative to its normal position and will leave a gap at its normal position
+        position use krke hm top left right bottom use kr skte h 
+        position:relative;
+        ****very important 
+        agr postion relative hoga to and agr top and left set kre to vo apni pehle vali position me ek gap chod dega to agr hme vo gap chahiye to use relative agr nhi chihiye to use absolute (ye bhi top bottom etc set kr dega and koi gap nhi chodega)
+        top:30px;
+        left:30px;
+    }  */
+    /*#box3{
+        position:absolute;
+        /* absolut:(important)relative to the position of its 1st parant(container h) 
+        top:30px;
+        left:36px;
+    }*/
+    /* #box3{
+        position:fixed;
+        fixed:position the element  relative to the browser window 
+        bottom:20px;
+        right:5px;
+    } */
+    #box3{
+        position:sticky;
+        /* uper chipak jata h  and position the element realative to the browser window*/
+        top:5px;
+      
+    }
+    #box2{
+        position:relative;
+        top:50px;
+    }
+    #box1{
+        position:sticky;
+        top:5px;
+    }
+    #box4{
+        position:relative;
+        top:50px;
+    }
+   
+</style>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">talk with us</div>
+    <div class="box" id="box4">4</div>
+</div>
+    
+</body>
+</html>

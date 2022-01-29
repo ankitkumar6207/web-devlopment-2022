@@ -1,0 +1,60 @@
+<!-- css grid is important  -->
+<!-- three things we use to layout the page :
+1.float and clear properties
+2.flexbox
+3.css grid -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display:grid;
+            /* now container became grid and element inside container became grid items .in 2-d directiins (these are tables ) grid is a layout mechanism its not a kind of table */
+
+            /* css grid container properties  */
+            grid-template-columns: 300px 100px 100px;
+            /* this is used to make columns yha 1st column ko 300 and 2nd ko 100 and 3rd ko 100px ka width mil jayega and saare item ko brabr divide krke(yha 9 itms h to 3 3 m2 divide krega) column bna dega */
+
+            /* emmet gtc  */
+            grid-template-columns:100px auto 200px;/*auto mtlb 1st and 3rd column dene ke baad jitna space bachta h vo 2nd column ko dedo*/
+            grid-template-columns: 100px 200px auto auto;
+
+
+            /* if you want to create more template then use repeat() */
+            grid-template-columns: repeat(9,auto);/*yha 9 no. of column h and auto width*/
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 3rem;/*gap add krta h items ke beech me (3*16=48px)*/
+
+            grid-template-columns: 1fr 1fr 4fr;
+            /*isse colums fraction me bt jayega and and pehle wale ko 1 fraction ,dusre wale ko 1 fractrion and tisre wale ko  4 fraction.*/
+
+        }
+        .item{
+            background-color: red;
+            margin:3px;
+            padding:15px 3px;
+            border:2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- if you want to use css grid then you have to set display:grid;  -->
+    <div class="container">
+        <!--emmet div.item{this is item-$}*9  -->
+
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- json : JavaScript object notation  -->
+<!-- google it with mdn if you want to know  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        } 
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj);//(syntax) this stringify() is used to convert a valid js object into string. and now it became a string and  you can use all functions of string.
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr);//this parse()function is used to convert a valid string into object.
+        console.log(newJsonObj)
+
+        
+
+
+    </script>
+</body>
+</html>

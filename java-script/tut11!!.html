@@ -1,0 +1,68 @@
+<!--&&&&&& use minimum these three(very important):
+1.get element by class name
+2.get element by id 
+3.query selector 
+(in sb se almost saare kaam ho jayenge)-->
+<!--//(VERY IMPORTANT) these are used to element ko dom se nikalne me and usse manipulate krne me kaam aate h.  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+    <!-- //dom:document object model -->
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About us</li>
+            <li>Know more</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+       let main=document.getElementById('main');
+       console.log(main);
+
+       let nav=document.getElementById('nav');
+       console.log(nav);
+
+
+    //    iske baad chrome developer tool me you can access element using this: 
+    nav.innerHTML//it will just print content inside nav as a string.
+    // and you can also change the content 
+    //nav.innerHTML="<li>dyanamic content</li>"//you can also copy and paste from upar wala content.
+    // and ab nav id ke andar sirf dyanamic content hi rhega 
+    // but sirf virtually agr referesh kroge sb normal ho jayega
+    // by doing this you can create good effects on elements. 
+    
+    // you can also do this with classes 
+    let container=document.getElementsByClassName('container');
+    console.log(container);
+
+    // you can access it from develper tool like an array: 
+    // container[0]
+    // container[1]
+
+    // let sel=document.querySelector('.container');
+    // console.log("selectors returns",sel);
+
+    // let sel=document.querySelector('#nav');
+    // console.log("selectors returns",sel);  
+
+    let sel=document.querySelector('#nav>li');
+    console.log("selectors returns",sel);
+    sel.innerHTML="google";
+    
+    // let sel=document.querySelectorAll('#nav>li');
+    // console.log("selectors returns",sel);
+    // sel[0].innerHTML="inserted";
+    // sel[1].innerHTML="second nav";
+    //home will change in inserted this is called dom manipulation.
+     </script>
+</body>
+</html>

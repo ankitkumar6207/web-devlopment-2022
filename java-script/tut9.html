@@ -1,0 +1,58 @@
+<!-- very important  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    
+    <script>
+         //1. Alert in in-browser JavaScript - Does not return anything
+        // alert("This is a message"); this is a method jisse ek popup choti window aati h jisse hm MODAL kehte h and it just popup the message inside the "".
+        // alert tb do jb user ko sirf btana h koi input nhi lena but if you want to take input then you can use promt . 
+
+        //2. Prompt in JS
+        // let name = prompt("What is your name?", "Guest");
+        // guest is default argument ye pehle se likha rahega.(its optional but recommended).
+        // name me jo bhi user name dalega vo aa jayega 
+        // console.log(name);
+
+        // 3.Confirm in JS
+        // it is used to double confimation krne ke liye 
+        let deletePost = confirm("Do you really want to delete this post?");
+        // console.log(deletePost);if ok then it will print true and if cancel then it will print false.
+
+        if(deletePost){
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            // Code to cancel deletion of the post
+            console.log("Your post has not been deleted");
+        }
+        
+        
+        
+        
+        // quiz 
+        let age=prompt("enter your age");
+        if(age<18)
+        console.log("you are not allowed inside the club");
+        else
+        console.log("you can enter inside the club");
+
+
+
+
+
+        
+       
+    </script>
+</body>
+</html>

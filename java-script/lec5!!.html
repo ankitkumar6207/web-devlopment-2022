@@ -1,0 +1,65 @@
+<!-- String function (VERY IMPORTANT) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | string functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>this is subheading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus perferendis error ad eligendi minima totam ratione eos architecto. Porro temporibus itaque fugit mollitia sed pariatur. Ex autem illo perspiciatis aut sint, exercitationem earum at.</p>
+    </div>
+    <script>
+        var str="This is a string";
+        console.log(str);
+
+        //First occurence of a substring
+        var postion=str.indexOf("is");
+        console.log(postion);
+
+
+        //Last occurence of a substring
+        postion=str.lastIndexOf("is");//this is overriding
+        console.log(postion);
+
+        //substring from a string(often used)
+        var substr=str.slice(1,6);//it takes two parameters 1.start position and 2 end position (it can take -ve index)
+        console.log(substr);
+
+        var substr=str.substring(1,7);//(it can't take -ve index)(not imp)
+        console.log(substr);
+
+        var substr1=str.substr(1,8);//(not important)//1st index(start)and 2nd index(kitne character lene h)
+        console.log(substr1);
+
+
+        var replaced=str.replace('string','ankit');//the actual string (str) will not change.
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());//chaged to upper case(all letters)
+        console.log(str.toLowerCase());//changed to lowe case
+
+        var newstr=str.concat("new string");//(but use + operatot for concatination)
+        console.log(newstr);
+
+        var stringWithWhiteSpaces="   this is       a boy with girl    ";
+        console.log(stringWithWhiteSpaces);
+        console.log(stringWithWhiteSpaces.trim());//this functio will only remove first and last extra spaces not the middle one(and it is used and important)
+
+        // extraction of char from as string 
+        var char2 = str.charAt(2);
+        var char2 = str.charCodeAt(2);//it gives the code of char.(not useful)
+        console.log(char2);
+
+        console.log(str[3]);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox in css</title>
+    <!-- the most important topic in css  -->
+    <!-- flexbox use krke hm layout design kr skte h  -->
+    <!-- css flexbox is a better way to align items into a container  -->
+    <style>
+      .container {
+        height: 444px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex; 
+        /* container ko flexbox bnane ke liye display ko flex krna hoga  */
+        /* initialize the container as a flex box   */
+
+       
+       
+       
+        /* flex properties of a flex container  */
+
+        flex-direction: row; /* koi farq nhi parega because flex direction default row hota h   */
+        /* flex-direction: column;
+           flex-direction: row-reverse;
+           flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap;(important) default value of flex wrap is no wrap  */
+        /*flex-wrap: wrap-reverse; not usually used */
+
+        /* shorthand  */ /* flex-flow: row-reverse wrap; */
+
+
+
+        /* (important) */
+        /* justify-content: center;  will centre the content in horizontal direction
+           justify-content: space-between;brabr spaces b/w boxes but no space from corner*/
+        /* justify-content: space-evenly; pura space bt jayega including starting and ending */
+        /* justify-content: space-around; */
+
+        align-items: center; /* will centre the content in vertical direction  */
+        align-items: flex-end;/* vertically end pe aa jayega
+        align-items: flex-start;  /* default */
+        align-items: stretch;
+        /* isse vertically space aata h wrap krne se 
+             check karo height kam krke aur wrap hona chahiye */
+      }
+      .item {
+        width: 150px;
+        height: 150px;
+        color: rgb(97, 84, 214);
+        background-color: coral;
+        margin: 10px;
+        padding: 5px;
+        border: 2px solid green;
+
+
+
+      }
+      /* (important)flex item ki properties alag alg lgana class me mt lagana  */
+      #item-1{
+        /* flex properties of flex items 1   */
+        /* order:2; */
+           /* jiska order bada vo last me chala jayega  */
+        flex-grow: 0;/*jiska value jyada hoga wo jyada teji se grow karega*/
+        /* -ve no. is invalid(you can use shrink) in flex grow    try kr ke dekhna  */
+        /* flex-shrink: 2; jb shrink karenge to jyada teji se shring karega*/
+
+      }
+      #item-2{
+          /* flex-grow:3;
+          flex-shrink:3; */
+          flex-basis: 260px;
+          /* when flex direction is set to raw flex-basis will control width  */
+          /* when flex direction is set to column flex-basis will control height  */
+     
+
+
+      }
+      #item-3{
+          /* order:5; */
+          /* jiska order bada vo last me chala jayega  */
+             /* shorthand flex:2 2 280px; grow shrink basis*/
+             
+             
+             
+             
+             /* very very important  */
+               /* align-self: flex-start; */
+             align-self: flex-end;
+             /* align-self: center;(vertically centre aayega) */
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+      <!-- emmet div.item#item-$*4   $ is for no. from 1 to 4-->
+      <div class="item" id="item-1">First box</div>
+      <div class="item" id="item-2">Second box</div>
+      <div class="item" id="item-3">Third box</div>
+      <!-- <div class="item" id="item-4">Fourth box</div>
+      <div class="item" id="item-5">Fifth box</div>
+      <div class="item" id="item-6">Sixth box</div> -->
+    </div>
+  </body>
+</html>

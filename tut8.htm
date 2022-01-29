@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <!-- very important -->
+  </head>
+  <body>
+    <h2>This is form tuturial</h2>
+    <form action="backend.php">
+      <label for="name">Name:</label>
+      <!-- for should be same as id -->
+      <!-- lable ka use h ki kisi bhi input tag ko sirf click krne se select ho jata h and it is recommended -->
+      <div>
+        <input type="text" name="myName" id="name" />
+        <!-- here name is memory where the name will store on backend  -->
+      </div>
+   
+      <div>Role: <input type="text" name="myRole" /></div>
+      <br />
+      <div>Email: <input type="email" name="myEmail" /></div>
+      <br />
+
+      <div>Date: <input type="date" name="myDate" /></div>
+      <br />
+      <label for="checkbox" checked>Are You Eligible?</label>
+      <div>
+        <input type="checkbox" name="Eligibility" id="checkbox" />
+      </div>
+      <br />
+      <div>checked use: <input type="checkbox" name="checked" checked /></div>
+      <div>
+        Bonus <input type="number" name="mybonus" />
+        <!-- koi bhi char nhi aa skta except e  
+        ex:230000 can written 23e4 -->
+      </div>
+      <br />
+      <div>
+        Gender: Male<input type="radio" name="mygender" />Female<input
+          type="radio"
+          name="mygender"
+        />
+        Transgender<input type="radio" name="mygender" />
+        <!-- dono ka name same h isiliye dono me se ek hi select hoga -->
+      </div>
+      <br />
+      <div>
+        Address: <br />
+        <textarea name="myaddress" id="" cols="70" rows="5"></textarea>
+      </div>
+      <div>
+        <!-- for and id must be same for label  -->
+        <label for="car">Car:</label>
+        <select name="mycar" id="car">
+          <option value="ind">Indica</option>
+          <option value="swf" selected>Swift</option>
+          <!-- selected attribute is used to default select  -->
+          <option value="Dj">Dzire</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="Reset Now" />
+      </div>
+      
+      <br />
+    </form>
+  </body>
+</html>

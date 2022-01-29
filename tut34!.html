@@ -1,0 +1,64 @@
+<!-- text shadow and box shadow -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+
+        }
+        .box{
+            background-color: rgb(59, 170, 170);
+            padding:23px 10px;
+            margin:23px 10px;
+
+            /* box shadow  */
+        /* syntax box-shadow:offset-x offset-y color */
+        /* syntax box-shadow:offset-x offset-y blur-radius color */
+        /* syntax box-shadow:offset-x offset-y blur-radius spread-radius color */
+        /* blurradius :kitna blur krna h shadow ko and spreadradius btata h kitna spread krna shadow ko  */
+
+
+            box-shadow: 2px 5px green;/*+ve no. se neeche shadow aata h */
+            box-shadow: -4px -5px green;/*-ve no. se upar shadow aata h */
+            box-shadow: 5px 6px 4px green;
+            box-shadow: -5px -6px 4px green;/*blur radius can't be negatve*/
+            box-shadow: -5px -6px 4px 5px green;/*blur radius can't be negatve*/
+            /* we can also use rgba colors  */
+            box-shadow: 4px 5px 5px rgba(34, 23, 12, 0.6);
+
+            /* agr box ke andar shadow chahiye to use inset  */
+            box-shadow: inset 4px 5px blue;
+            /* and we can also give multiple shadows */
+            box-shadow: 3px 5px green, 10px 6px blue;
+
+            
+        }
+        /* text shadow  */
+        .box h2{
+            text-shadow:4px 5px red ;
+            text-shadow:2px 3px 2px white ;
+            text-shadow:-2px -3px 2px white ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem delectus inventore totam ipsa dignissimos illo, architecto officiis aperiam, fugit laboriosam sed ab quis maxime sit, deleniti ad nisi impedit earum exercitationem placeat ratione at.</p>
+        </div>
+        <div class="box" id="item1">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem delectus inventore totam ipsa dignissimos illo, architecto officiis aperiam, fugit laboriosam sed ab quis maxime sit, deleniti ad nisi impedit earum exercitationem placeat ratione at.</p>
+        </div>
+        <div class="box" id="item1">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem delectus inventore totam ipsa dignissimos illo, architecto officiis aperiam, fugit laboriosam sed ab quis maxime sit, deleniti ad nisi impedit earum exercitationem placeat ratione at.</p>
+        </div>
+    </div>
+</body>
+</html>

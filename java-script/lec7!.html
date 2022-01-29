@@ -1,0 +1,56 @@
+<!-- arrays and arrays object  -->
+<!-- you can also write js in developer tool in console section  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        // premitive data types 
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;//boolean
+        let myVar4 = null;
+        let myVar5 = undefined;//jb kuch nhi hoga to undefine
+        // ex let var1;    isko default value undefined hogi
+            
+        // (VERY IMORTANT)
+        // Primitive alava hm kuch bhi bnate h wo objet hota h 
+        // Object:which stores key value pairs and store more than one value within a single name
+
+        // object: user defined object
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+            "channel 2": "ProgrammingWithHarry",//if you want space then you have to insert it into double quotes
+      // (VERY VERY IMP) // and you can access the element in devloper tool by doing this : 
+        // 1.employee.name;(1st syntax)
+        // 2.employee['salary'];(2nd syntax)
+        // but if you used space in name (like channel 2) then you can't use 1st syntax you have to use 2nd syntax
+
+
+        }
+        console.log(employee);
+
+        // array :predefined special object
+        // let names = [1, 2, 4, "Harry", undefined];//store any value
+        // let names = new Array(41, 2, 4, "Harry", undefined);(2nd way of declaring array using new keyword)
+        // console.log(names);
+        // console.log(names[1]);
+
+        // let names = new Array(23,45);creates an array of  size 2 with values 23 and 45
+
+        let names = new Array(23);//creates an array of size 23 with undefined 
+        console.log(names.length);
+        names = names.sort();
+        names.push("this is pushed");//push method is used to insert element at the last position.
+        console.log(names);
+    </script>
+</body>
+</html>

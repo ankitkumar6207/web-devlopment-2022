@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            display:grid;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns:1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr) );/*minimum width 300px and max width 1fr hi ho skta h and ye responsiveness achieve krne ke liye use hota h ,we can use media queries as well*/
+            grid-gap: 1rem;
+            /* justify-content: center; */
+        }
+        .box{
+            border:2px solid black;
+            background: rgb(211, 211, 42);
+            padding:34px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is item-1</div>
+        <div class="box">this is item-2</div>
+        <div class="box">this is item-3</div>
+        <div class="box">this is item-4</div>
+        <div class="box">this is item-5</div>
+        <div class="box">this is item-6</div>
+        <div class="box">this is item-7</div>
+        <div class="box">this is item-8</div>
+        <div class="box">this is item-9</div>
+        <!-- <div class="box">this is item-10</div> -->
+    </div>
+</body>
+</html>

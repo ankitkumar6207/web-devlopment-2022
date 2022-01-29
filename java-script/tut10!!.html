@@ -1,0 +1,85 @@
+<!-- do,while and for loops  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do,while and for loops</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1>This is heading</h1>
+
+    <script>
+    //  usually hm for loop ka use krte  h and for traversing the array we use for loop 
+    
+    for(let i=0;i<3;i++)
+    {
+        console.log(i);
+    }
+
+    let friends=["rohan",'ankit',"sumit","monika","suraj"];
+    // for(let i=0;i<friends.length;i++)
+    // {
+    //     console.log("hello friend, "+friends[i]);
+    // }
+
+    // emet 
+    // for (let index = 0; index < friends.length; index++) {
+    //     const element = friends[index];
+    //     console.log("hello friends "+element);
+        
+    // }
+
+    //IMP(LEARN THE SYNTAX OF FOREACH AND FOR OF LOOPS THEY ARE VERY USEFUL)
+    // you will use these two loops almost 80 times out of 100 times.  
+    // but you will use while and do while loop some time to uderstand the concept atleast           
+
+    // for each loop(modern and updated loop)
+    friends.forEach(function f(element){
+        console.log("Hello friends,"+element+" to modern javascript");
+
+    });
+
+    //for of loop(more modern and new loop )(you can use it)
+    for(element of friends){
+        console.log("Hello friends,"+element+" to modern javascript again");
+        
+    }
+
+    // but if you want to iterate with keys in object then you can use for in loop 
+    let employee={
+        name:"ankit",
+        salary:2,
+        channelname:"cwh"
+        // here name salary and channelname are keys 
+    };
+    for(key in employee){
+        console.log(`the ${key} of employee is ${employee[key]}`);
+    }
+
+    // while loop in js 
+    let i=0;
+    while(i<4)
+    {
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+
+    // do while loop in js 
+    // do while loop runs atleast once without caring about the condition 
+    let j=34;
+    do{
+        console.log(`${j} is less than 4 and you are inside do while loop`);
+    }while(j<4);
+
+
+</script>
+</body>
+
+</html>
+

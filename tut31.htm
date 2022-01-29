@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+       h1{
+           color:black;
+           background-color: red;
+           font-weight: bold;
+           text-align: center;
+
+       }
+       /* if p is contained by any li which is contained by div 
+       div li p{
+           background-color: yellow;
+           color:green;
+           font-weight: bold;
+
+       }  */
+       /* if p is right inside div this css will be applied
+       div > p{
+           iska mtlab h ki div ka dirct chilp agar p h to prop lagao vrna nhi 
+           background-color: yellow;
+           color:green;
+           font-weight: bold;
+
+       } */
+
+           /* if p right after div i.e p is next sibling of div
+       div + p{
+           iska mtlab h ki p se just pehle sibling div h to prop lagao vrna nhi  
+           color:green;
+           background-color: red;
+       }  */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item" ><p>This is another paragraph inside li</p></li>
+                <li>THis will not affected</li>
+            </ul>
+            <p>this is another paragraph</p>
+
+        </div>
+        <p>THis is outermost paragraph</p>
+    </div>
+
+</body>
+</html>

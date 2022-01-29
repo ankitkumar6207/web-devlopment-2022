@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Yusei Magic", sans-serif;
+      }
+      .container {
+        width: 900px;
+        border: 3px solid purple;
+        /* padding: 10px 10px; */
+        /*margin:auto;ye container ko centre pe le jayega*/
+        margin: 20px auto;
+        background-color: rgb(219, 139, 35);
+      }
+      .item {
+        border: 2px solid grey;
+        margin: 15px 5px;
+        padding: 10px 15px;
+        background-color: rgb(228, 183, 183);
+      }
+      #fruits {
+         float: left;  /*koi bhi box me agr float lga rhe ho to uska width bhi set krna.  */
+        width: 48%;
+        clear:left;
+      }
+      #stationory {
+        float: left;
+        width: 48%;
+       
+       
+      }
+      #computer {
+        float: left; 
+        width: 100%;
+         clear:both; 
+         /* jb uper dono id's me float lgata to stationary overlap hone lga but aisa hmm nhi chahte to float property clear krne ke liye clear use kiya */
+        /*iska mtlb h ki koi float property allowed nhi h na left na right yha ab overlapping nhi hogi*/
+      }
+      p,h3{
+        /* text-align:left;
+        text-align:right;
+        text-align:center; */
+        text-align:justify;
+      }
+      h1{
+         margin: auto;/* margin auto dent ke liye width bhi set krna hoga  */
+    width: 326px;
+
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my store</h1>
+      <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          excepturi aperiam eum rerum eos cum nulla aliquam accusamus voluptatum
+          expedita debitis, sint animi alias nam quam, voluptates dicta totam
+          quas. Provident nobis Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni quam error perferendis adipisci harum soluta,
+          id dolor quis eaque veritatis eum excepturi. Enim, distinctio. Cumque
+          tempora aspernatur accusantium sequi quasi? Perspiciatis in totam
+          aliquid.
+        </p>
+      </div>
+
+      <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          excepturi aperiam eum rerum eos cum nulla aliquam accusamus voluptatum
+          expedita debitis, sint animi alias nam quam, voluptates dicta totam
+          quas. Provident nobis tenetur sint Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Ipsam nesciunt aliquam distinctio
+          numquam, odio sit voluptates minus delectus nisi velit perferendis
+          ipsum praesentium nihil pariatur amet facilis animi deserunt nam vitae
+          ex perspiciatis. Voluptatem!
+        </p>
+      </div>
+
+      <div id="computer" class="item">
+        <h3>computer</h3>
+        <p id="computerpara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          excepturi aperiam eum rerum eos cum nulla aliquam accusamus voluptatum
+          expedita debitis, sint animi alias nam quam, voluptates dicta totam
+          quas. Provident nobis tenetur sint.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

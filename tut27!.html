@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+</head>
+<style>
+    .box{
+        width:117px;
+        height:117px;
+        border:2px solid black;
+
+    }
+    #box1{background-color: red;
+      position: relative;
+      top:20px;
+      z-index:34;
+    }
+    #box2{background-color: green;
+    position: relative;
+    top:15px;
+    z-index: -1;
+    /* jiska z-index jyada hoga vo aage aajayega  */
+   
+   
+    /* (IMPORTANT)z-index sirf position relative,absolute,fixed,sticky ke liye hi kaam karega jo default hota h position static me kaam nhi karega */
+
+    
+      /* visibility: hidden; */
+      /* visibility hidden sirf element ko hide krta h  but space ko reserve rkhta h  */
+      /* display:none; */
+      /* display none element ko hi gayab krta h  */
+      }
+    #box3{background-color: blue;}
+    #box4{background-color: yellow;}
+</style>
+<body>
+    <!-- div.box#box$*4 yha $ ka mtlab  h ki serial no.-->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
