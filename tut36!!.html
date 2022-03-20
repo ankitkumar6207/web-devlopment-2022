@@ -6,7 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keyframes and Animations</title>
 </head>
-<body>
+<style>
+.container{
+    background: rgb(90, 84, 84);
+
+}
+.box{
+    background: green;
+    width:250px;
+    height: 250px;
+    position: relative;
+    /* this is optional but you should use position: relative  */
+    animation-name: ankit;
+    /* animation name kuch bhi ho skta h and is animation name ko bahar define krna hoga using keyframe */
+    animation-name: harry;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    /* animation-iteration-count: infinite; */
+    /* ab ye chlta rahega  */
+    /* UPER KE TEEN PROPERTIES AND KEYFRAME DEFINATION RAT LO BAAKI SB OPTIONAL HAI  */
+
+
+
+    /* neeche vale saare properties ke value dal dal ke check karo  */
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: ease; */
+    /* ease-in:suru me sloow jayega aur baad me ekdam se fast ho jayega  */
+    /* ease-out:suru me fast jayega aur baad me ekdam se slow ho jayega  */
+    /* ease-in-out:slowly start hoga and slowly end hoga  and beech me fast rahega*/
+    /*animation-delay: 3s;animation 3 sec ke baad chalega*/
+    /* animation-direction: alternate; */
+
+
+    /* shorthand(important ) */
+    /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-film-mode  */
+    animation:ankit 5s ease-in 1s 12 backwards;
+
+
+
+
+
+
+}
+/* 1st way  */
+/* this animation usually used for progress bar  */
+@keyframes ankit {
+    from{
+        width:200px;
+
+    }
+    to{
+      width:1400px;
+    }
     
+}
+/* 2nd way  */
+@keyframes harry {
+    /* no. can be different like 30% 40% */
+    0%{
+        top:0px;
+        left: 0px;
+
+    }
+    25%{
+        top :250px;
+        left: 0px;
+
+    }
+    75%{
+        top:250px;
+        left:250px;
+    }
+    100%{
+        top:0px;
+        left:250px;
+    }
+
+    
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
 </body>
 </html>
